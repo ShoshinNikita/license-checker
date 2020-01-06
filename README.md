@@ -2,6 +2,12 @@
 
 Check licenses of dependencies
 
+## Installation
+
+```
+go get github.com/ShoshinNikita/license-checker
+```
+
 ## Process
 
 1. Get list of all dependencies with `go list -m all` command
