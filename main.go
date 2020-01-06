@@ -30,6 +30,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("couldn't get list of dependencies: %s\n", err)
 	}
+	if len(deps) == 0 {
+		fmt.Println("No dependencies found")
+		return
+	}
 
 	licenses := make(map[string][]string)
 	for _, license := range GetLicenses(deps) {
